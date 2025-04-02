@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario</title>
+</head>
+<body>
+   <h1>Formulario</h1>
+   <form>
+    <label for="pnome">Primeiro Nome:</label>
+    <input type="text" id="pnome" name="pnome" placeholder="Insira seu primeiro nome"><br><br>
+
+    <!-- Tipo RADIO, o tipo radio é um tipo de entrada (input) em formulario HTML que permite ao usuario selecionar apenas uma opcao de um consjunto de escolhas -->
+     <label>
+        <strog>Qual seu nivel de programador?</strog>
+     </label><br>
+     <label>
+        <input type="radio" name="nivel"  value="Iniciante" checked> Iniciante
+    </label>
+    <label>
+        <input type="radio" name="nivel"  value="Medio" checked> Comecei a pouco tempo
+    </label>
+    <label>
+        <input type="radio" name="nivel"  value="Avançado" checked> Avançado
+    </label>
+    <br><br>
+
+    <!--Tipo Select para selecionar Itens-->
+    <label for="Escolaridade">
+        <strong>Sua escolaridade</strong>
+    </label><br>
+    <select id="Escolaridade" required>
+        <option selected disabled value="">Selecione</option>
+        <option>Educacao Basica</option>
+        <option>Ensino Medio</option>
+        <option>Ensino Superior</option>
+        <option>Pos-Graduacao</option>
+        <option>Outros</option>
+    </select>
+    <br><br>
+
+    <!--Tag de Checkbox-->
+    <label>
+        <strong>Selecione as tecnologias que voce conhece</strong>
+    </label><br><br>
+    <input type="Checkbox" id="tcenologia1" name="tcenologia1" value="HTML">
+    <label for="tcenologia1">HTML</label>
+
+    <input type="Checkbox" id="tcenologia2" name="tcenologia2" value="CSS">
+    <label for="tcenologia2">CSS</label>
+
+    <input type="Checkbox" id="tcenologia3" name="tcenologia3" value="JavaScript">
+    <label for="tcenologia3">JavaScript</label>
+
+    <input type="Checkbox" id="tcenologia4" name="tcenologia4" value="Python">
+    <label for="tcenologia4">Python</label><br><br>
+   </form>
+   <br><br>
+
+   <!--Formulario de envio de arquivo-->
+   <form action="/upload-arquivo" method="post" enctype="multipart/form-data">
+    <label for="arquivo">Escolha um arquivo:</label>
+    <input type="file" id="arquivo" name="arquivo" required><br><br>
+
+    <!--Formulario com data-->
+    <label for="Nascimento">Data de nascimento:</label>
+    <input type="date" name="Nascimento" id="Nascimento"><br><br>
+   </form>
+
+    <!--Formulario de agrupamento--> 
+    <form action="/processar_formulario" method="post">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome">
+            <br><br>
+            <label for="email">E-mail</label>
+            <input type="text" id="email" name="email">
+        </fieldset>
+        <fieldset>
+            <legend>Dados de Endereço</legend>
+            <label for="endereço">Endereço</label>
+            <input type="text" id="endereço" name="endereço">
+            <br><br>
+            <label for="cidade">Cidade</label>
+            <input type="text" id="cidade" name="cidade">
+            <label for="estado">Estado</label>
+            <input type="text" id="estado" name="estado">
+        </fieldset>
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <!--Limitacao de caracteres-->
+    <form>
+        <h1>Formulario limitacao de caracteres</h1>
+        <form action="/processar_formulario" method="post">
+            <label for="mensagens">Mensagem (limite de caracter 100)</label>
+            <br>
+            <textarea id="mensagens" name="mensagens" rows="4" cols="50" maxlength="100">
+            </textarea>
+              <!--
+              Rows: Define a altura da area de texto
+              Cols: Define a largura da area do texto em termo de caractere
+              Maxlength: Limite de numero maximo de caractere 
+              -->  
+        </form>
+    </form>
+
+</body>
+</html>

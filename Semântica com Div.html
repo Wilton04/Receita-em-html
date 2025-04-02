@@ -1,0 +1,82 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Exemplo de HTML Semântico com Divs</title> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
+
+
+<!--Aplicação das propriedade e seletores de CSS-->
+<style>
+    #header, #nav, #main, #footer{
+        font-size: 20px;
+    }
+</style>
+
+<body> 
+ 
+    <!-- Cabeçalho do site -->
+    <div id="header"> <!-- Div para agrupar o cabeçalho -->
+        <header>
+            <h1>Meu Site Semântico</h1> <!-- Título principal da página -->
+            <p>Bem-vindo ao exemplo de uma página web usando HTML semântico e divs.</p> <!-- Parágrafo introdutório -->
+        </header>
+    </div>
+ 
+    <!-- Menu de navegação -->
+    <div id="nav"> <!-- Div para agrupar a navegação -->
+        <nav>
+            <ul> <!-- Lista não ordenada -->
+                <li><a href="#">Home</a></li> <!-- Link para a página inicial -->
+                <li><a href="#">Sobre</a></li> <!-- Link para a seção Sobre -->
+                <li><a href="#">Serviços</a></li> <!-- Link para a seção Serviços -->
+                <li><a href="#">Contato</a></li> <!-- Link para a seção Contato -->
+            </ul>
+        </nav>
+    </div>
+ 
+    <!-- Conteúdo principal da página -->
+    <div id="main"> <!-- Div que agrupa o conteúdo principal -->
+       
+        <!-- Seção principal -->
+        <div id="section"> <!-- Div para organizar a seção principal -->
+            <section>
+                <h2>Sobre Nós</h2> <!-- Subtítulo da seção -->
+               
+                <!-- Primeiro artigo dentro da seção -->
+                <div id="article1"> <!-- Div para agrupar o primeiro artigo -->
+                    <article>
+                        <h3>Nossa História</h3> <!-- Subtítulo do artigo -->
+                        <p>Nós começamos em 2020 com o objetivo de oferecer soluções tecnológicas acessíveis a todos.</p> <!-- Parágrafo com a história da empresa -->
+                    </article>
+                </div>
+ 
+                <!-- Segundo artigo dentro da seção -->
+                <div id="article2"> <!-- Div para agrupar o segundo artigo -->
+                    <article>
+                        <h3>Missão</h3> <!-- Subtítulo do artigo -->
+                        <p>Nossa missão é proporcionar a melhor experiência digital para nossos clientes, focando em inovação e qualidade.</p> <!-- Parágrafo com a missão da empresa -->
+                    </article>
+                </div>
+            </section>
+        </div>
+ 
+        <!-- Barra lateral com notícias recentes -->
+        <div id="aside"> <!-- Div para organizar o conteúdo da barra lateral -->
+            <aside>
+                <h2>Notícias Recentes</h2> <!-- Título da seção de notícias -->
+                <p>Acompanhe nossas últimas atualizações e eventos na seção de notícias.</p> <!-- Parágrafo com informações recentes -->
+            </aside>
+        </div>
+    </div>
+ 
+    <!-- Rodapé da página -->
+    <div id="footer"> <!-- Div para agrupar o rodapé -->
+        <footer>
+            <p>&copy; 2024 Meu Site Semântico. Todos os direitos reservados.</p> <!-- Informações de direitos autorais -->
+        </footer>
+    </div>
+ 
+</body>
+</html>
